@@ -66,7 +66,7 @@ Requires(preun): dkms
 %package recording
 Summary:        NGCP rtpengine recording daemon packet
 Group:          System Environment/Daemons
-BuildRequires:  gcc make redhat-rpm-config mysql-devel ffmpeg-devel
+BuildRequires:  gcc make redhat-rpm-config mysql-devel ffmpeg-devel	
 
 %description recording
 %{summary}.
@@ -78,7 +78,8 @@ BuildRequires:  gcc make redhat-rpm-config mysql-devel ffmpeg-devel
 
 
 %prep
-%setup -q -n %{archname}%{version}
+%setup -q
+%{__tar} xzvf %{SOURCE0} -C $PWD/
 
 
 %build
