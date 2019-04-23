@@ -1,5 +1,5 @@
 Name:		ngcp-rtpengine
-Version:	%{getenv:VERSION}
+Version:	mr%{getenv:VERSION}
 Release:	1%{?dist}
 Summary:	The Sipwise NGCP rtpengine
 
