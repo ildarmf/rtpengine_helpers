@@ -78,8 +78,8 @@ BuildRequires:  gcc make redhat-rpm-config mysql-devel ffmpeg-devel
 
 
 %prep
-%setup -q
-%{__tar} xzvf %{version}.tar.gz -C $PWD/
+echo 'prepare'
+%setup -q -n mr%{version}
 
 
 %build
